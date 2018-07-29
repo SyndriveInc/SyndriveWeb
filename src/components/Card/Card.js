@@ -33,7 +33,7 @@ class Card extends React.Component {
 		if(this.state.hidden)
 		return (
 			<div className='tc bg-lightest-white dib br3 pa3 ma2 bw2 shadow-3 card-unchecked'>
-				<img src={`https://robohash.org/${id}?size=200x200`} alt='profile photo'
+				<img src='../images.png' alt='profile photo'
 					className='br-100 h4 w4 dib ba b--black-05 pa2 grow holder'
 				/>
 				<div>

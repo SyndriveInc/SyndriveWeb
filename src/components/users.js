@@ -1,17 +1,17 @@
 const users = [
     {
         id: 1,
-        name: 'Leanne Graham',
-        dob: '01/01/1992',
-        bloodGroup: 'A+', 
+        name: 'Suvarna S',
+        dob: '01/01/2000',
+        bloodGroup: 'B+', 
         contacts: [
             {
-                name: 'Mom', 
+                name: 'Srividya', 
                 number: '+917797468957', 
-                relation: 'Mother'
+                relation: 'None'
             }, 
             {
-                name: 'Dad', 
+                name: 'Ashmi', 
                 number: '+918746956810', 
                 relation: 'Father'
             }
