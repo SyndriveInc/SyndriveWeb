@@ -6,7 +6,7 @@ const CardList = ({ users }) => {
 	return (	
 		<div className='card-list'>
 			{
-				users.map((user, i) => {
+				users && users.map((user, i) => {
 					return (
 						<Card key={i} 
 							id={users[i].id} 
@@ -21,6 +21,9 @@ const CardList = ({ users }) => {
 						/>
 					);
 				})
+			}
+			{
+				!users && <h1>You have no patients yet!</h1>
 			}
 		</div>
 	);
