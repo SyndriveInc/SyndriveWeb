@@ -53,7 +53,7 @@ class App extends Component {
         // const filteredUsers = users;
 
         return (
-          <div className="App">
+          <div className='App'>
             <Particles className='particles'
                 params={particlesOptions}
                 style={{width: '100%'}}
