@@ -12,6 +12,7 @@ const Navigation = ({onRouteChange, isSignedIn }) => {
 	else {
 		return (
 			<div className='nav-bar'>
+				<p className='tc white ttu nav-comp' id='title'>Syndrive</p>
 				<p onClick={() => onRouteChange('signin')} className='nav-comp dim'>Sign In</p>
 				<p onClick={() => onRouteChange('signup')} className='nav-comp dim'>Sign Up</p>
 			</div>	

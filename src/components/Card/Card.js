@@ -68,7 +68,7 @@ class Card extends React.Component {
 						label='Issue Addressed'
 						onChange={this.deleteCard}
 					/>Issue Addressed
-			</div>
+				</div>
 			</div>
 		); 
 

@@ -70,10 +70,12 @@ class App extends Component {
                 params={particlesOptions}
                 style={{width: '100%'}}
             />
-            <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
+            <Navigation isSignedIn={isSignedIn} 
+                        onRouteChange={this.onRouteChange} 
+            />
+            {/*<Title /> */}
             { route === 'home' 
                 ? <div>
-                    <Title />
                     <CardList users={users}/>
                 </div>
                 : (
