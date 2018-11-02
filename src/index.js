@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { BrowserRouter, Route } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 import 'tachyons';
 // import './firebase/firebase';
-import { BrowserRouter, Route } from 'react-router-dom';
 
 //COMPONENTS
 import SignIn from './components/SignIn/SignIn';
