@@ -1,4 +1,4 @@
-const drawerWidth = 240;
+const drawerWidth = 270;
 
 const navigationStyle = theme => ({
     root: {
@@ -19,7 +19,7 @@ const navigationStyle = theme => ({
         flexDirection: 'row',
         justifyContent: 'flex-start',
         width: '100%', //new
-        marginLeft: drawerWidth,
+        // marginLeft: drawerWidth,
     },
     navIconHide: {
         [theme.breakpoints.up('md')]: {

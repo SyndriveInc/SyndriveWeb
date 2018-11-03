@@ -4,10 +4,10 @@ import firebase from 'firebase';
 
 import { ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 
-import { AccountCircle, Dashboard, History, Lock, PowerSettingsNew } from '@material-ui/icons';
+import { AccountCircle, Dashboard, History, LocationOn, PowerSettingsNew } from '@material-ui/icons';
 
 export const listItems = (
-    <div style={{marginTop: 60}}>
+    <div>
         <NavLink to='/dashboard' className='nav-style'>
             <ListItem button>
                 <ListItemIcon>
@@ -19,12 +19,18 @@ export const listItems = (
         {/* <NavLink to='/share' className='nav-style'> */}
         <ListItem button>
             <ListItemIcon>
+                <LocationOn />
+            </ListItemIcon>
+            <ListItemText primary='Maps' />
+        </ListItem>
+        <ListItem button>
+            <ListItemIcon>
                 <History />
             </ListItemIcon>
             <ListItemText primary='History' />
         </ListItem>
         {/* </NavLink> */}
-        <a 
+        {/* <a 
             href='#' 
             // target='_blank' 
             className='nav-style'>
@@ -34,7 +40,7 @@ export const listItems = (
                 </ListItemIcon>
                 <ListItemText primary='Privacy Policy' />
             </ListItem>
-        </a>
+        </a> */}
     </div>
 );
 

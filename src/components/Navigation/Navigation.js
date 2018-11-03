@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles, AppBar, Divider, Drawer, Hidden, IconButton, List, Toolbar, Typography } from '@material-ui/core';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 // TODO: import CardList
@@ -11,6 +11,8 @@ import { Menu } from '@material-ui/icons';
 import { listItems, otherListItems } from '../../components/Navigation/NavigationListItems';
 import CardList from '../../components/CardList/CardList';
 import navigationStyle from '../../assets/jss/navigationStyle.jsx';
+
+import './Navigation.css';
 
 // const drawerWidth = 240;
 
@@ -32,9 +34,9 @@ class NavDrawer extends React.Component {
         const { classes, theme } = this.props;
 
         const drawer = (
-            <div>
-                Syndrive
-                <Divider />
+            <div style={{height: '100vh'}} className='sidebar-div'>
+                <h2 className='ttu' style={{textAlign: 'center'}}>Syndrive</h2>
+                <Divider style={{margin: '0px 10px'}} />
                 <List>{listItems}</List>
             </div>
         );
@@ -62,6 +64,14 @@ class NavDrawer extends React.Component {
                         </NavLink>
                     </Toolbar>
                 </AppBar> */}
+                {/* <IconButton
+                    color='inherit'
+                    aria-label='Open drawer'
+                    onClick={this.handleDrawerToggle}
+                    className={classes.navIconHide}
+                >
+                    <Menu style={{ color: 'black', position: 'absolute', top: 2, left: 3 }} />
+                </IconButton> */}
                 <Hidden mdUp>
                     <Drawer
                         variant='temporary'
