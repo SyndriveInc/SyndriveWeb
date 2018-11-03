@@ -6,6 +6,7 @@ import Particles from 'react-particles-js';
 import SignIn from './components/SignIn/SignIn';
 import SignUp from './components/SignUp/SignUp';
 import CardList from './components/CardList/CardList';
+import NavDrawer from './components/Navigation/Navigation';
 import NotFound from './components/NotFound';
 
 import {
@@ -38,7 +39,7 @@ const App = () => (
     <Router history={history}>
         <div className='container'>
             <Switch>
-                <Route path='/dashboard' component={CardList} />
+                <Route path='/dashboard' component={NavDrawer} />
                 <Route exact path='/' component={SignIn} />
                 <Route path='/register' component={SignUp} />
                 {/* Add Victims page, History page */}

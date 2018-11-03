@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './SignIn.css';
-import { withStyles, Button, InputLabel, InputAdornment, Input } from '@material-ui/core';
+// import { withStyles, Button, InputLabel, InputAdornment, Input } from '@material-ui/core';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 
 import { firebase } from '../../firebase/firebase';
@@ -36,7 +36,7 @@ class SignIn extends React.Component {
     };
 
     render() {
-        const { classes, theme } = this.props;
+        // const { classes, theme } = this.props;
         return (
             <article className='br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center card'>
                 <main className='pa4 white'>

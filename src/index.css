@@ -18,6 +18,10 @@ button {
 	cursor: pointer;
 }
 
+.nav-style {
+  text-decoration: none;
+}
+
 
 
 .enjoy-css {

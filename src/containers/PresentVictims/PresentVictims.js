@@ -7,7 +7,7 @@ class PresentVictims extends React.Component {
     render() {
         return (
             <div>
-
+                
             </div>
         );
     }
