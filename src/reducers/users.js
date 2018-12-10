@@ -1,4 +1,4 @@
-import { ADD_VICTIM, REMOVE_VICTIM, EDIT_VICTIM } from './constants';
+import { ADD_VICTIM, REMOVE_VICTIM, EDIT_VICTIM, SET_VICTIMS } from './constants';
 
 const victimsReducerDefaultState = [];
 
@@ -20,6 +20,8 @@ const victimsReducer = (state=victimsReducerDefaultState, action) => {
                 else 
                     return victim;
             });
+        case SET_VICTIMS: 
+            return action.victims;
         default:
             return state;
     }

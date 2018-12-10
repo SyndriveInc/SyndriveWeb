@@ -4,6 +4,7 @@ import './index.css';
 import { Provider } from 'react-redux';
 import App from './App';
 import 'tachyons';
+import { startSetVictims } from './actions/users';
 import registerServiceWorker from './registerServiceWorker'; 
 
 // import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
@@ -29,5 +30,9 @@ const jsx = (
     // </MuiThemeProvider>
 );
 
-ReactDOM.render(jsx, document.getElementById('root'));
+ReactDOM.render(<p>Loading...</p>, document.getElementById('root'));
+
+store.dispatch(startSetVictims()).then(() => {
+    ReactDOM.render(jsx, document.getElementById('root'));
+})
 registerServiceWorker();
