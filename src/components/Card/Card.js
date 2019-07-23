@@ -9,9 +9,9 @@ const Card = (props) => {
 
 	//const cardBody = (isChecked) ? 'card-checked' : 'card-unchecked';
 
-	deleteCard = () => { setHidden(!hidden); }
+	const deleteCard = () => { setHidden(!hidden); }
 
-	const { name, dob, bloodGroup, id, contacts, lat, lng, isChecked } = props;
+	const { name, dob, bloodGroup, /* id,  */contacts, lat, lng/* , isChecked */ } = props;
 	const year = Number(dob.substr(6, 4));
 	const month = Number(dob.substr(3, 2)) - 1;
 	const day = Number(dob.substr(0, 2));

@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 
 // import Navigation from './components/Navigation/Navigation';
 import SignIn from './containers/SignIn/SignIn';
 import SignUp from './containers/SignUp/SignUp';
-import CardList from './components/CardList/CardList';
+// import CardList from './components/CardList/CardList';
 import NavDrawer from './components/Navigation/Navigation';
 import NotFound from './containers/NotFound';
 import LandingPage from './containers/LandingPage/LandingPage';
@@ -21,20 +21,20 @@ import createHistory from 'history/createBrowserHistory';
 
 export const history = createHistory();
 
-const particlesOptions = {
-    particles: {
-        number: {
-            value: 30,
-            density: {
-                enable: true,
-                value_area: 800
-            }
-        },
-        color: {
-            value: '#FF00FF'
-        }
-    }
-}
+// const particlesOptions = {
+//     particles: {
+//         number: {
+//             value: 30,
+//             density: {
+//                 enable: true,
+//                 value_area: 800
+//             }
+//         },
+//         color: {
+//             value: '#FF00FF'
+//         }
+//     }
+// }
 
 const App = () => (
     <Router history={history}>

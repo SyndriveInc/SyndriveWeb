@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import './SignUp.css';
 
-const SignUp = ({  }) => {
+const SignUp = () => {
 	return (
 		<article className='br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center card'>
 			<main className='pa4 white'>
