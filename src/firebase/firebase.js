@@ -1,27 +1,18 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/database';
+import 'firebase/auth';
 
 const config = {
-    apiKey: "AIzaSyAharVgI1d_UK9rXYlQj-3WCYqkUpoyJD4",
-    authDomain: "syndrive-209515.firebaseapp.com",
-    databaseURL: "https://syndrive-209515.firebaseio.com",
-    projectId: "syndrive-209515",
-    storageBucket: "syndrive-209515.appspot.com",
-    messagingSenderId: "885138541108"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID
 };
 firebase.initializeApp(config);
 
-let users = [];
-
 const database = firebase.database();
-/* database.ref()
-    .once('value')
-    .then((snapshot) => {
-        const val = snapshot.val();
-        // console.log(val);
-        users = val.users;
-    })
-    .catch((e) => {
-        console.log('Error fetching data ', e);
-    }); */
+const auth = firebase.auth();
 
-export { firebase, database as default };
+export { firebase, auth, database as default };

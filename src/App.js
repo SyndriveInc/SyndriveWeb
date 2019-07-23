@@ -3,11 +3,12 @@ import './App.css';
 import Particles from 'react-particles-js';
 
 // import Navigation from './components/Navigation/Navigation';
-import SignIn from './components/SignIn/SignIn';
-import SignUp from './components/SignUp/SignUp';
+import SignIn from './containers/SignIn/SignIn';
+import SignUp from './containers/SignUp/SignUp';
 import CardList from './components/CardList/CardList';
 import NavDrawer from './components/Navigation/Navigation';
-import NotFound from './components/NotFound';
+import NotFound from './containers/NotFound';
+import LandingPage from './containers/LandingPage/LandingPage';
 
 import {
     Router,
@@ -39,8 +40,9 @@ const App = () => (
     <Router history={history}>
         <div className='container'>
             <Switch>
+                <Route exact path='/' component={LandingPage} />
                 <Route path='/dashboard' component={NavDrawer} />
-                <Route exact path='/' component={SignIn} />
+                <Route path='/signin' component={SignIn} />
                 <Route path='/register' component={SignUp} />
                 {/* Add Victims page, History page */}
                 <Route component={NotFound} />
