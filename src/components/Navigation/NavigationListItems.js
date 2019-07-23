@@ -1,10 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import firebase from 'firebase';
-
 import { ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
-
 import { AccountCircle, Dashboard, History, LocationOn, PowerSettingsNew } from '@material-ui/icons';
+
+import { auth } from '../../firebase/firebase';
 
 export const listItems = (
     <div>
@@ -29,18 +28,6 @@ export const listItems = (
             </ListItemIcon>
             <ListItemText primary='History' />
         </ListItem>
-        {/* </NavLink> */}
-        {/* <a 
-            href='#' 
-            // target='_blank' 
-            className='nav-style'>
-            <ListItem button>
-                <ListItemIcon>
-                    <Lock />
-                </ListItemIcon>
-                <ListItemText primary='Privacy Policy' />
-            </ListItem>
-        </a> */}
     </div>
 );
 
@@ -55,7 +42,7 @@ export const otherListItems = (
             </ListItem>
         </NavLink>
         <ListItem button onClick={
-            () => firebase.auth().signOut()
+            () => auth.signOut()
         }>
             <ListItemIcon>
                 <PowerSettingsNew />

@@ -1,16 +1,11 @@
 import React from 'react';
 
-class PresentVictims extends React.Component {
-    constructor(props);
-    super(props);
-
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
+const PresentVictims = () => {
+    return (
+        <div>
+            
+        </div>
+    );
 }
 
 export default PresentVictims;

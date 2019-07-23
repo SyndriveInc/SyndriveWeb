@@ -51,36 +51,4 @@ const App = () => (
     </Router>
 );
 
-/* class App extends Component {
-    constructor() {
-        super();
-        this.state = {
-            input: '',
-            users: users,
-            isChecked: false
-        }
-    }
-
-    //    componentDidMount() {
-    //     axios.get('https://syndrive-209515.firebaseio.com/users/' + user.uid + '.json?auth='AIzaSyAharVgI1d_UK9rXYlQj-3WCYqkUpoyJD4')
-    // 		.then(response => response.json())
-    // 		.then(users => this.setState({ users: users }));
-    // 		});
-    // }
-
-    render() {
-        const { isSignedIn, users } = this.state;
-        // const filteredUsers = users;
-
-        return (
-            <div className='App'>
-                <Particles className='particles'
-                    params={particlesOptions}
-                    style={{ width: '100%' }}
-                />
-            </div>
-        );
-    }
-} */
-
 export default App;

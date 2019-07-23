@@ -1,9 +1,6 @@
 import React from 'react';
 
-class History extends React.Component {
-    constructor(props);
-    super(props);
-
+const History = () => {
     render() {
         return (
             <div>
