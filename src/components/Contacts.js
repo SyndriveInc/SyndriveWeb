@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Contacts = ({ name, number, key }) => {
+const Contacts = ({ name, number }) => {
 	return (
 		<div className='container-fluid row'>
 			<div className='tl col-md-3'>

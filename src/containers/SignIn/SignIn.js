@@ -26,7 +26,7 @@ const SignIn = () => {
             <main className='pa4 white'>
                 <div className='measure'>
                     <fieldset id='sign_in' className='ba b--transparent ph0 mh0'>
-                        <legend className='f2 fw6 ph0 mh0 blue'>Login</legend>
+                        <legend className='f2 fw6 ph0 mh0 blue tc'>Login</legend>
                     </fieldset>
                     <StyledFirebaseAuth uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
                     {/* <div>

@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles, AppBar, Divider, Drawer, Hidden, IconButton, List, Toolbar, Typography } from '@material-ui/core';
+import { withStyles, Divider, Drawer, Hidden, List } from '@material-ui/core';
 // import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 // TODO: import CardList
 
-import { Menu } from '@material-ui/icons';
+// import { Menu } from '@material-ui/icons';
 
-import { listItems, otherListItems } from '../../components/Navigation/NavigationListItems';
+import { listItems/* , otherListItems */ } from '../../components/Navigation/NavigationListItems';
 import CardList from '../../components/CardList/CardList';
 import navigationStyle from '../../assets/jss/navigationStyle.jsx';
 
