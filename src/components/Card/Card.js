@@ -47,9 +47,10 @@ const Card = (props) => {
 					{
 						contacts.map((contact, i) => {
 							return (
-								<Contacts key={i}
-									name={contacts[i].name}
-									number={contacts[i].number}
+								<Contacts 
+									key={i}
+									name={contact.name}
+									number={contact.number}
 								/>
 							);
 						})
